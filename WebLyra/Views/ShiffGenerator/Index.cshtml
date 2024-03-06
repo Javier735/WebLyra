@@ -1,0 +1,74 @@
+﻿
+<!--button generator shiff-->
+<img src="~/img/banco.png" style="width:150px; visibility: hidden; margin:auto;" />
+<button type="button" class="btn btn-outline-success" onclick="callShiffTicket();">Genera ficha</button>
+
+ <!--content shiff list-->
+<div id="contentShiffList"></div>
+
+
+@section Scripts
+{
+	<script>
+		$(document).ready(function () {
+			callShiffList();
+		});
+	</script>
+}
+
+<script>
+	function callShiffTicket() {			
+		$.ajax({
+			type: "get",
+			datatype: 'json',
+			cache: false,
+			url: '@Url.Content("~/ShiffGenerator/Ticket")',
+			success: function (result) {
+				console.log("resultado");
+				console.log(result);
+				if (result.folio > 0) {
+
+					callShiffList();
+							
+					var ventana = window.open('', 'PRINT', 'height=600,width=450');				
+					ventana.document.write("<img src='img/banco.png' style='width: 150px;'/>");
+					ventana.document.write("<h2>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</h2>");
+					ventana.document.write("<hr>");
+					ventana.document.write("<h1>Ficha: " + result.folio + "</h1>");
+					ventana.document.write("<p>" + result.date + "</p>");
+
+
+					ventana.print();
+					ventana.close();					
+					window.onafterprint = () => {
+						ventana.close();
+					}		
+				}
+				else { }
+			},
+			error: function (result) {
+				alert('Ocurrio un error ' + result.error.toString());
+				var resultado = result;			
+			}
+		});
+	}
+
+	function callShiffList() {
+
+		$.ajax({
+			type: "get",
+			datatype: 'json',
+			cache: false,
+			url: '@Url.Content("~/ShiffGenerator/ShiffList")',
+			success: function (result) {
+				$('#contentShiffList').html(result);
+			},
+			error: function (result) {
+				alert('Ocurrio un error ' + result.error.toString());
+				var resultado = result;				
+			}
+		});
+	}
+</script>
+
+
