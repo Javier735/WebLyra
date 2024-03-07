@@ -23,7 +23,7 @@ namespace WebLyra.Controllers.ShiffGenerator
 			DateTime currentDate = DateTime.Now;
 			Shiff newShiff = new();
 			newShiff.FolioNumber = turn;
-			newShiff.Status = turn;
+			newShiff.Status = 1;
 			newShiff.CreationDate = currentDate;
 			newShiff.Comments = "prueba";
 			_context.Add(newShiff);

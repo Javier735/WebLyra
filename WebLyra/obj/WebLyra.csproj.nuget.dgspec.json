@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\javier.rodriguezan\\Documents\\proycts\\WebLyra\\WebLyra\\WebLyra.csproj": {}
+    "C:\\Users\\LENOVO\\Documents\\proyect_lyra\\WebLyra\\WebLyra\\WebLyra.csproj": {}
   },
   "projects": {
-    "C:\\Users\\javier.rodriguezan\\Documents\\proycts\\WebLyra\\WebLyra\\WebLyra.csproj": {
+    "C:\\Users\\LENOVO\\Documents\\proyect_lyra\\WebLyra\\WebLyra\\WebLyra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\javier.rodriguezan\\Documents\\proycts\\WebLyra\\WebLyra\\WebLyra.csproj",
+        "projectUniqueName": "C:\\Users\\LENOVO\\Documents\\proyect_lyra\\WebLyra\\WebLyra\\WebLyra.csproj",
         "projectName": "WebLyra",
-        "projectPath": "C:\\Users\\javier.rodriguezan\\Documents\\proycts\\WebLyra\\WebLyra\\WebLyra.csproj",
-        "packagesPath": "C:\\Users\\javier.rodriguezan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\javier.rodriguezan\\Documents\\proycts\\WebLyra\\WebLyra\\obj\\",
+        "projectPath": "C:\\Users\\LENOVO\\Documents\\proyect_lyra\\WebLyra\\WebLyra\\WebLyra.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LENOVO\\Documents\\proyect_lyra\\WebLyra\\WebLyra\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\javier.rodriguezan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -39,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -51,17 +56,27 @@
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[8.0.2, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[8.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.1, )"
             }
@@ -85,7 +100,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
