@@ -17,7 +17,7 @@ namespace WebLyra.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.1")
+                .HasAnnotation("ProductVersion", "8.0.2")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -224,7 +224,7 @@ namespace WebLyra.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("WebLyra.Models.Entities.FolioControl.FolioControl", b =>
+            modelBuilder.Entity("WebLyra.Models.FolioControl", b =>
                 {
                     b.Property<int>("FolioControlId")
                         .ValueGeneratedOnAdd()
@@ -246,7 +246,7 @@ namespace WebLyra.Data.Migrations
                     b.ToTable("FolioControl");
                 });
 
-            modelBuilder.Entity("WebLyra.Models.Entities.Shiff.Shiff", b =>
+            modelBuilder.Entity("WebLyra.Models.Shiff", b =>
                 {
                     b.Property<int>("ShiffId")
                         .ValueGeneratedOnAdd()

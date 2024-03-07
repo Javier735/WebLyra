@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebLyra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59705f0edc4bfddb17ecff843034ff8886db646b")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebLyra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebLyra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
